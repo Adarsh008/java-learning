@@ -1,3 +1,5 @@
+package com.learning.multithreading;
+
 class Counter {
     int count =0 ;
 

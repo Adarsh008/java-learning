@@ -1,3 +1,4 @@
+package com.learning.multithreading;
 
 class  Mythread extends  Thread{
     @Override
@@ -22,7 +23,7 @@ class ThreadByInterface implements Runnable{
 
 public class FirstThread {
     public static void main(String[] args) throws InterruptedException {
-        /*Thread myThread = new Mythread();
+        /*Thread myThread = new com.learning.multithreading.Mythread();
         myThread.start();*/
 
         ThreadByInterface th1 = new ThreadByInterface();

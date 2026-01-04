@@ -1,3 +1,4 @@
+package com.learning.multithreading;
 
 class NormalThread extends  Thread{
     @Override

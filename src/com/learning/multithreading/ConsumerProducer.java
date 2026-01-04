@@ -1,3 +1,5 @@
+package com.learning.multithreading;
+
 class SharedResources {
     int buffer;
     boolean hasdata;
@@ -11,7 +13,7 @@ class SharedResources {
             }
         }
         buffer = r;
-        System.out.println("Producer produced " + buffer);
+        System.out.println("com.learning.multithreading.Producer produced " + buffer);
         hasdata = true;
         notify();
     }
