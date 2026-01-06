@@ -25,8 +25,10 @@ public class FunctionalInterfaceLearn {
         //2. Function -> Apply method ,Accept 1 input ,return 1 output
         Function<String,Integer> lengthOfString = (s)->s.length();
         System.out.println(lengthOfString.apply("Adarsh"));
-       /* Function<Integer, Integer> identity = Function.identity();
-        System.out.println(identity.apply(5));*/
+
+        //identity() function return the same input argument
+        Function<String, String> identity = Function.identity();
+        System.out.println(identity.apply("Identity function called"));
 
         //3. Consumer -> Accept method, 1 input ,return void
         Consumer<List<Integer>> printInteger = (s)->{
@@ -60,6 +62,7 @@ public class FunctionalInterfaceLearn {
         //9.Binary operator -> Accept 2 paramter of same type and return the same type of output
         BinaryOperator<Integer> binaryOperatorExample = (a,b)-> a+b;
         System.out.println(binaryOperatorExample.apply(3,4));
+
 
 
 
